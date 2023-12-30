@@ -9,5 +9,5 @@
 * main.content //crea un main con clase content
 
 ## Generar requeriments.txt
-* pip freeze > requeriments.txt //generar texto con las versiones de los modulos que necesitas
-* pip install -r requetiments.txt //instala los modulos con las versiones que necesitas
+* pip freeze > requirements.txt //generar texto con las versiones de los modulos que necesitas
+* pip install -r requirements.txt //instala los modulos con las versiones que necesitas
