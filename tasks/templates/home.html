@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block content%}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">DjangoCRUD</h1>
+        <p>¡Bienvenidos a djangoCRUD!
+
+            En djangoCRUD, hemos creado una aplicación pensando en ti y en simplificar tu vida diaria. ¿Alguna vez has deseado tener una herramienta que te ayude a gestionar tus tareas de manera fácil y sin complicaciones? ¡Bien, eso es exactamente lo que djangoCRUD hace por ti!
+            Imagina un lugar donde puedas anotar tus tareas, marcarlas cuando estén hechas y mantener todo organizado. Eso es lo que djangoCRUD hace por ti. No importa si estás manejando proyectos grandes o simplemente tus quehaceres diarios, djangoCRUD te permite hacerlo de manera sencilla.
+
+            Con una interfaz amigable y funciones pensadas para ti, djangoCRUD te ofrece una experiencia sin complicaciones. Agregar nuevas tareas es pan comido, y marcarlas como completadas es aún más fácil. Queremos que te enfoques en lo importante, y djangoCRUD está aquí para facilitarte eso.</p>
+        <div class="text-center">
+            <a href="{%url 'signin'%}" class="btn btn-primary">Sign in</a>
+            <a href="{%url 'signup'%}" class="btn btn-secondary">Sign up</a>
+         </div>
+    </section>
+</main>
+{%endblock%}
