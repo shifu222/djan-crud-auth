@@ -3,7 +3,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 mt-5">
-                <form method="post" class="card card-body">
+                <form method="post" class="card card-body" id="miFormulario">
                     {% csrf_token %}
                     {{error}}
                     <h1 class="text-center">Sign up</h1>
@@ -24,4 +24,13 @@
             </div>
         </div>
     </main>  
+    <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            var campo = document.getElementById("campo");
+            if (campo.value.length < 8) {
+              alert("La contraseña debe tener al menos 8 caracteres.");
+              event.preventDefault(); // Evita que se envíe el formulario
+            }
+          });
+    </script>
 {%endblock%}
