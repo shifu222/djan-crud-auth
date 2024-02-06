@@ -26,7 +26,7 @@
     </main>  
     <script>
         document.getElementById("miFormulario").addEventListener("submit", function(event) {
-            var campo = document.getElementById("campo");
+            var campo = document.getElementById("password1");
             if (campo.value.length < 8) {
               alert("La contraseña debe tener al menos 8 caracteres.");
               event.preventDefault(); // Evita que se envíe el formulario
